@@ -1,0 +1,1 @@
+<h1>User {{user.username}} hase joined.</h1>

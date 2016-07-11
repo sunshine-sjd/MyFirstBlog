@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/MyFirstBlog.iml" filepath="$PROJECT_DIR$/.idea/MyFirstBlog.iml" />
+      <module fileurl="file://D:/python/Sql/.idea/Sql.iml" filepath="D:/python/Sql/.idea/Sql.iml" />
+      <module fileurl="file://D:/Todo/.idea/Todo.iml" filepath="D:/Todo/.idea/Todo.iml" />
+      <module fileurl="file://D:/python/flask/code/flasky/.idea/flasky.iml" filepath="D:/python/flask/code/flasky/.idea/flasky.iml" />
+      <module fileurl="file://D:/python/scrap/.idea/scrap.iml" filepath="D:/python/scrap/.idea/scrap.iml" />
+    </modules>
+  </component>
+</project>

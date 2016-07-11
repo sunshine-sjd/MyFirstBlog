@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% import 'bootstrap/wtf.html' as wtf %}
+{% import '_macros.html' as macros %}
+{% block title %}Index{% endblock title %}
+{% block page_content %}
+
+<div class='page-head'>
+    <h1>Hello, {% if current_user.is_authenticated %} welcome {{current_user.username}} {% else %} Stranger {% endif %}</h1>
+</div>
+{% if current_user.can(Permission.WRITE_ARTICLES) %}
+<div>
+    {{wtf.quick_form(form)}}
+</div>
+{% endif %}
+<div class="post-tabs">
+    <ul class="nav nav-tabs">
+        <li {% if not show_followed %}  class="active" {% endif %} ><a href="{{ url_for('main.show_all') }}">All</a></li>
+        {% if current_user.is_authenticated %}
+        <li{% if show_followed %} class="active"{% endif %}><a href="{{ url_for('main.show_followed_posts') }}">Followers</a></li>
+        {% endif %}
+    </ul>
+    {% include '_post.html' %}
+</div>
+<div class="pagination">
+    {{ macros.pagination_widget(pagination, "main.index")}}
+</div>
+{% endblock page_content %}
+
+{% block scripts %}
+{{super()}}
+{{pagedown.include_pagedown()}}
+{% endblock scripts %}
