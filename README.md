@@ -1,2 +1,2 @@
 # MyFirstBlog
-pyyhon+flask
+python+flask
