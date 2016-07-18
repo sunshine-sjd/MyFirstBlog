@@ -3,14 +3,28 @@
 {{super()}}
 <link rel="shortcut icon" href="{{ url_for('static', filename = 'favicon.ico') }}" type="image/x-icon">
 <link rel="icon" href="{{ url_for('static', filename = 'favicon.ico') }}" type="image/x-icon">
-<link type="text/css" rel="stylesheet", href="{{url_for('static', filename='styles.css')}}"/>
-<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='dist/css/flat-ui.min.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='myblog.css') }}">
+<script type="text/javascript" src="http://www.codefans.net/ajaxjs/jquery-1.6.2.min.js"></script>
 {% endblock head %}
 {% block title %}Flasky{% endblock title %}
 {% block navbar %}
-<div class="navbar navbar-inverse" role="navigation">
+<!--
+<header class="main-header" style="background-image:url(http://static.ghostchina.com/image/6/d1/fcb3879e14429d75833a461572e64.jpg)">
+  <div class="container">
+      <div class="row">
+          <div class="col-sm-12">
+              <a class="branding" title="Flask 开源博客" href="index.html">
+                  <img src="http://static.ghostchina.com/image/b/46/4f5566c1f7bc28b3f7ac1fada8abe.png"
+                       alt="Flask 开源博客">
+              </a>
+          </div>
+      </div>
+  </div>
+</header>
+-->
+<div class="navbar navbar-default" role="navigation">
     <div class="container">
-        <div class="navbar-header">
+       <div class="navbar-header">
             <button type="button" class="navbar-toggle"
             data-toggle="collapse" data-target=".navbar-collapse">
               <span class="sr-only">Toggle navigation</span>
@@ -21,26 +35,32 @@
        </div>
        <div class="navbar-collapse collapse">
            <ul class="nav navbar-nav">
-           <li><a href="/">Home</a></li>
+           <li><a href="/">
+<img width="200" height="20" srcset="//cdn2.hubspot.net/hub/1867618/hubfs/Condo_Grade-Jan-2016/logo-color.png">
+</a></li>
            </ul>
            <ul class="nav navbar-nav navbar-right">
                {% if current_user.is_authenticated %}
+               <li><a href="/">首页</a></li>
+               <li><a href="/">联系我</a></li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Account <b class="caret"></b></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">账户设置 <span class="caret"></span></a>
                     <ul class="dropdown-menu">
 					    {% if current_user.is_authenticated %}
-					    <li><a href="{{ url_for('main.user', username=current_user.username) }}">Profile</a></li>
+					    <li><a href="{{ url_for('main.user', username=current_user.username) }}">个人资料</a></li>
 						{% endif %}
 						{% if current_user.can(Permission.MODERATE_COMMENTS) %}
-						<li><a href="{{url_for('main.moderate')}}">Moderate Commnets</a></li>
+						<li><a href="{{url_for('main.moderate')}}">管理评论</a></li>
 						{% endif %}
-                        <li><a href="{{ url_for('auth.change_password') }}">Change Password</a></li>
-						<li><a href="{{ url_for('auth.change_email_request') }}">Change email</a></li>
-                        <li><a href="{{ url_for('auth.logout') }}">Log Out</a></li>
+                        <li><a href="{{ url_for('auth.change_password') }}">修改密码</a></li>
+						<li><a href="{{ url_for('auth.change_email_request') }}">修改邮箱</a></li>
+                        <li><a href="{{ url_for('auth.logout') }}">退出</a></li>
                     </ul>
                 </li>
                {% else %}
-               <li><a href="{{ url_for('auth.login') }}">Sign In</a></li>
+               <li><a href="/">首页</a></li>
+               <li><a href="/">联系我</a></li>
+               <li><a href="{{ url_for('auth.login') }}">登录</a></li>
 			   {% endif %}
            </ul>
        </div>

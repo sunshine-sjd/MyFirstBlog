@@ -4,19 +4,19 @@
 {% block title %}Index{% endblock title %}
 {% block page_content %}
 
-<div class='page-head'>
-    <h1>Hello, {% if current_user.is_authenticated %} welcome {{current_user.username}} {% else %} Stranger {% endif %}</h1>
+<div class='page-head' style="padding-left: 15px">
+    <h1>欢迎回来 {% if current_user.is_authenticated %}{{current_user.username}} {% else %}{% endif %}</h1>
 </div>
 {% if current_user.can(Permission.WRITE_ARTICLES) %}
-<div>
+<div style="margin-top: 25px;padding-left: 15px">
     {{wtf.quick_form(form)}}
 </div>
 {% endif %}
 <div class="post-tabs">
     <ul class="nav nav-tabs">
-        <li {% if not show_followed %}  class="active" {% endif %} ><a href="{{ url_for('main.show_all') }}">All</a></li>
+        <li {% if not show_followed %}  class="active" {% endif %} ><a href="{{ url_for('main.show_all') }}">全部文章</a></li>
         {% if current_user.is_authenticated %}
-        <li{% if show_followed %} class="active"{% endif %}><a href="{{ url_for('main.show_followed_posts') }}">Followers</a></li>
+        <li{% if show_followed %} class="active"{% endif %}><a href="{{ url_for('main.show_followed_posts') }}">关注者文章</a></li>
         {% endif %}
     </ul>
     {% include '_post.html' %}
@@ -29,4 +29,16 @@
 {% block scripts %}
 {{super()}}
 {{pagedown.include_pagedown()}}
+<script>
+$(document).ready(function(){
+$("p").each(function()
+{
+ var maxwidth=150;
+ if($(this).text().length>maxwidth){
+ $(this).text($(this).text().substring(0,maxwidth));
+$(this).html($(this).html()+"...");
+}
+});
+ });
+</script>
 {% endblock scripts %}

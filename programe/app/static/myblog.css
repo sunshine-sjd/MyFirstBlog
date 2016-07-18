@@ -1,0 +1,138 @@
+body {
+    color: #7e8c93;
+    font-family: Open Sans,sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    background-color: #eee;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 72.8px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #575a64;
+    font-family: "Montserrat",sans-serif;
+    margin: 0 0 15px;
+}
+
+img {
+    border: 0 none;
+    height: auto;
+    max-width: 50%;
+    vertical-align: bottom;
+}
+.main-header {
+    background-position: center 20%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 62px;
+    padding-top: 62px;
+    text-align: center;
+}
+
+.branding{
+    color: #303030;
+    font-size: 3.5em;
+}
+
+.navbar-default .navbar-nav > li > a:hover{
+    color: #e67e22;
+
+}
+
+.dropdown-menu > li > a:hover{
+    color: #e67e22;
+}
+
+.navbar-right{
+    padding-top: 3px;
+}
+
+.post-date{
+    float: right;
+}
+
+.post-author{
+    margin-bottom: 15px;
+}
+
+.post-author > a{
+    color: #e67e22;
+}
+
+.post-footer{
+    text-align: right;
+}
+
+.post-content{
+    margin-bottom: 20px;
+}
+
+.label-primary{
+    background-color: #e67e22;
+}
+
+span {
+    text-align: right;
+}
+.post-footer > a:hover{
+    text-decoration: none;
+}
+
+.post{
+    background-color:white;
+    padding: 20px 30px;
+    margin: 20px 0 20px 0;
+    box-shadow: 5px 5px 20px #ccc;
+
+}
+
+.control-label{
+    color: #e67e22;
+}
+
+.nav-tabs{
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+#submit {
+    background-color: #e67e22;
+    color: white;
+}
+
+p {
+    width: 100%;
+}
+
+.nav-tabs > li.active > a{
+    color: orange;
+}
+
+.nav > li > a{
+    color:#e67e22;
+}
+
+
+.background-css{
+    background: #fff none repeat scroll 0 0;
+    margin-top: 15%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.right-slider{
+    background: #fff none repeat scroll 0 0;
+    border-radius: 1px;
+    border-top: 4px solid #50c9f1;
+    padding: 10px 15px;
+    float: right;
+    margin-top: 10px;
+}
+
+.pagination{
+    float: right;
+}

@@ -2,12 +2,12 @@
 {% import 'bootstrap/wtf.html' as wtf %}
 {% block title %}Flask-Login{% endblock title %}
 {% block page_content %}
-<div class = 'page-header'>
-    <h1>Login</h1>
-</div>
-<div class="col-md-4">
+  <div class="col-md-4 background-css">
+     <p>登录</p>
      {{wtf.quick_form(form)}}
-	 <h3><a href="{{url_for('auth.register')}}">Register a new user</a></h3>
-	 <h3><a href="{{url_for('auth.reset_password_request')}}">Forget your password?</a></h3>
-</div>
+     <br>
+     <span><a href="{{url_for('auth.reset_password_request')}}">忘记密码?</a></span>
+     <span style="position: absolute;right: 15px"><a href="{{url_for('auth.register')}}">注册新用户</a></span>
+  </div>
+
 {% endblock page_content %}

@@ -46,15 +46,15 @@ class EditProfileAdminForm(Form):
 
 
 class PostForm(Form):
-    body = PageDownField("what's your mind now?", validators=[DataRequired()])
+    body = PageDownField("记录你的点滴...", validators=[DataRequired()])
     submit = SubmitField('submit')
 
 
 class EditPostForm(Form):
-    body = PageDownField("what's your mind now?", validators=[DataRequired()])
+    body = PageDownField("记录你的点滴...", validators=[DataRequired()])
     submit = SubmitField('confirm change')
 
 
 class CommentForm(Form):
-    body = PageDownField("What's your comment?", validators=[DataRequired()])
+    body = PageDownField("评论：", validators=[DataRequired()])
     submit = SubmitField('Submit')

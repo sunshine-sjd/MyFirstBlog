@@ -6,9 +6,8 @@
 
 {% block page_content %}
 {% include '_post.html '%}
-<h4 id="comments">Comments</h4>
 {% if current_user.can(Permission.COMMENT) %}
-<div class="comment-form">
+<div>
     {{ wtf.quick_form(form) }}
 </div>
 {% endif %}

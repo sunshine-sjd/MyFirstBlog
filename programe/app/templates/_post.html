@@ -1,4 +1,7 @@
-<ul class="posts">
+<div class="container" style="display: table">
+  <div class="row" style="display: table-row">
+    <article class="main-post col-md-8" style="display: table-cell">
+      <ul class="posts list-unstyled">
     {% for post in posts%}
 	<li class="post">
 	    <!--div class="profile-thumbnail">
@@ -21,17 +24,42 @@
 		</div>
 		<div class="post-content">
             <div class="post-footer">
-                <a href="{{ url_for('.post', id=post.id) }}"><span class="label label-default">Permalink</span></a>
+                <a href="{{ url_for('.post', id=post.id) }}"><span class="label label-info">阅读全文</span></a>
 				{% if current_user == post.author %}
-				    <a href="{{ url_for('.edit_post', id=post.id) }}"><span class="label label-primary">Edit</span></a>
+				    <a href="{{ url_for('.edit_post', id=post.id) }}"><span class="label label-primary">修改</span></a>
 				{% elif current_user.is_administrator()%}
-				    <a href="{{ url_for('.edit_post', id=post.id) }}"><span class="label label-danger">Edit[Admin]</span></a>
+				    <a href="{{ url_for('.edit_post', id=post.id) }}"><span class="label label-danger">修改[管理员]</span></a>
 				{% endif %}
 				<a href="{{ url_for('.post', id=post.id) }}#comments">
-                    <span class="label label-primary">{{ post.comments.count() }} Comments</span>
+                    <span class="label label-primary">{{ post.comments.count() }} 评论</span>
                 </a>
             </div>
         </div>
 	</li>
 	{% endfor %}
-</ul>
+  </ul>
+    </article>
+    <div class="col-md-4 right-slider" style="display: table-cell;margin-top: 19px">
+          <h3>What is CondoGrade?</h3>
+          <p>CondoGrade provides a rating and detailed financial reports about condo associations.</p>
+          <p>Buyers use our tools to make smarter decisions about their next condo purchase.</p>
+          <p>Remember:</p>
+          <ul>
+              <li>Buildings need maintenence.</li>
+              <li>Budgets need to be accurate.</li>
+              <li>You could end up paying.</li>
+          </ul>
+      </div>
+    <div class="col-md-4 right-slider" style="display: table-cell;margin-top: 19px">
+          <h3>What is CondoGrade?</h3>
+          <p>CondoGrade provides a rating and detailed financial reports about condo associations.</p>
+          <p>Buyers use our tools to make smarter decisions about their next condo purchase.</p>
+          <p>Remember:</p>
+          <ul>
+              <li>Buildings need maintenence.</li>
+              <li>Budgets need to be accurate.</li>
+              <li>You could end up paying.</li>
+          </ul>
+      </div>
+  </div>
+</div>
