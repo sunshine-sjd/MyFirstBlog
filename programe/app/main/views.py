@@ -13,7 +13,8 @@ from ..models import Permission, Post
 def index():
     form = PostForm()
     if form.validate_on_submit() and current_user.can(Permission.WRITE_ARTICLES):
-        post = Post(body=form.body.data, author=current_user._get_current_object())
+        post = Post(body=form.body.data, author=current_user._get_current_object(), title=form.title.data,
+                    category=form.category.data)
         db.session.add(post)
         return redirect(url_for('main.index'))
     page = request.args.get('page', 1, type=int)
