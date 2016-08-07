@@ -2,7 +2,6 @@
 
 {% block page_content %}
 <h1>{{user.username}}!</h1>
-<img class="img-rounded profile-thumbnail" src="{{ user.gravatar(size=100) }}">
 {% if current_user.is_administrator() %}
 <p><a class="btn btn-default" style="color: red" href="{{url_for('main.edit_profile_admin', id=user.id)}}">Edit profile(Admin)</a></p>
 {% endif %}    

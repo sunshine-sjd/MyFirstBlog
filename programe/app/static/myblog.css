@@ -140,3 +140,7 @@ p {
 #category{
     width: 10%;
 }
+
+li > div > h2 {
+    text-align: center;
+}

@@ -4,12 +4,12 @@
 {% block title %}Index{% endblock title %}
 {% block page_content %}
 
-<div class='page-head' style="padding-left: 15px">
+<div class='page-head' style="margin-left: 25px">
     <h1>欢迎回来 {% if current_user.is_authenticated %}{{current_user.username}} {% else %}{% endif %}</h1>
 </div>
 {% if current_user.can(Permission.WRITE_ARTICLES) %}
-<div style="margin-top: 25px;padding-left: 15px">
-    {{wtf.quick_form(form)}}
+<div style="margin-top: 25px;margin-left: 25px">
+    {{wtf.quick_form(form,method='post')}}
 </div>
 {% endif %}
 <div class="post-tabs">
