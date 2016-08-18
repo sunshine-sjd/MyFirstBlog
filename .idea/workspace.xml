@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="27088320-f075-4095-856a-92fbc82942c6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="D:/python/flask/flask_web/flask_mod/data-dev.sqlite" afterPath="D:/python/flask/flask_web/flask_mod/data-dev.sqlite" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manage.py" afterPath="$PROJECT_DIR$/manage.py" />
       <change type="MODIFICATION" beforePath="D:/python/flask/flask_web/.idea/workspace.xml" afterPath="D:/python/flask/flask_web/.idea/workspace.xml" />
     </list>
