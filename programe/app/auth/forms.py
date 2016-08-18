@@ -14,7 +14,7 @@ class LoginForm(Form):
 
 
 class RegistrationForm(Form):
-    username = StringField('输入您的用户名:', validators=[DataRequired(), Length(6, 8)])
+    username = StringField('输入您的用户名:', validators=[DataRequired(), Length(0, 8)])
     password = PasswordField('设置您的密码:', validators=[DataRequired(), EqualTo('password2',
                                                                                     message='password must match.')])
     password2 = PasswordField('再次输入您设置的密码:', validators=[DataRequired()])
