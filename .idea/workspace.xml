@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="27088320-f075-4095-856a-92fbc82942c6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/runtime.txt" />
       <change type="MODIFICATION" beforePath="D:/python/flask/flask_web/flask_mod/data-dev.sqlite" afterPath="D:/python/flask/flask_web/flask_mod/data-dev.sqlite" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/programe/config.py" afterPath="$PROJECT_DIR$/programe/config.py" />
       <change type="MODIFICATION" beforePath="D:/python/flask/flask_web/.idea/workspace.xml" afterPath="D:/python/flask/flask_web/.idea/workspace.xml" />
     </list>
     <ignored path="MyFirstBlog.iws" />
@@ -48,7 +47,7 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/programe/app/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="-8.6285715">
               <caret line="251" column="27" selection-start-line="251" selection-start-column="27" selection-end-line="251" selection-end-column="27" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
@@ -76,6 +75,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="config.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/programe/config.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.39522058">
+              <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="requirements.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/requirements.txt">
           <provider selected="true" editor-type-id="text-editor">
@@ -86,7 +95,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="runtime.txt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="runtime.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/runtime.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
@@ -116,7 +125,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/manage.py" />
         <option value="$PROJECT_DIR$/programe/app/api_1_0/users.py" />
         <option value="$PROJECT_DIR$/programe/app/api_1_0/posts.py" />
         <option value="$PROJECT_DIR$/programe/app/api_1_0/authentication.py" />
@@ -167,6 +175,7 @@
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/runtime.txt" />
+        <option value="$PROJECT_DIR$/programe/config.py" />
       </list>
     </option>
   </component>
@@ -296,6 +305,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="MyFirstBlog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyFirstBlog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyFirstBlog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programe" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -740,13 +763,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/programe/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3697997">
-          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/Todo/config.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.14791988">
@@ -1061,35 +1077,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/programe/app/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="251" column="27" selection-start-line="251" selection-start-column="27" selection-end-line="251" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-            <element signature="e#1551#1810#0" expanded="false" />
-            <element signature="e#2331#2750#0" expanded="false" />
-            <element signature="e#2839#3178#0" expanded="false" />
-            <element signature="e#5151#5921#0" expanded="false" />
-            <element signature="e#5969#6029#0" expanded="false" />
-            <element signature="e#6094#6147#0" expanded="false" />
-            <element signature="e#6198#6254#0" expanded="false" />
-            <element signature="e#6324#6429#0" expanded="false" />
-            <element signature="e#6469#6752#0" expanded="false" />
-            <element signature="e#6815#6918#0" expanded="false" />
-            <element signature="e#6979#7267#0" expanded="false" />
-            <element signature="e#7348#7482#0" expanded="false" />
-            <element signature="e#7527#7974#0" expanded="false" />
-            <element signature="e#8016#8118#0" expanded="false" />
-            <element signature="e#8228#8291#0" expanded="false" />
-            <element signature="e#8367#8745#0" expanded="false" />
-            <element signature="e#8789#8860#0" expanded="false" />
-            <element signature="e#9683#9717#0" expanded="false" />
-            <element signature="e#9765#9866#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/programe/app/main/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.21243523">
@@ -1128,6 +1115,43 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="12" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/programe/app/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.6285715">
+          <caret line="251" column="27" selection-start-line="251" selection-start-column="27" selection-end-line="251" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+            <element signature="e#1551#1810#0" expanded="false" />
+            <element signature="e#2331#2750#0" expanded="false" />
+            <element signature="e#2839#3178#0" expanded="false" />
+            <element signature="e#5151#5921#0" expanded="false" />
+            <element signature="e#5969#6029#0" expanded="false" />
+            <element signature="e#6094#6147#0" expanded="false" />
+            <element signature="e#6198#6254#0" expanded="false" />
+            <element signature="e#6324#6429#0" expanded="false" />
+            <element signature="e#6469#6752#0" expanded="false" />
+            <element signature="e#6815#6918#0" expanded="false" />
+            <element signature="e#6979#7267#0" expanded="false" />
+            <element signature="e#7348#7482#0" expanded="false" />
+            <element signature="e#7527#7974#0" expanded="false" />
+            <element signature="e#8016#8118#0" expanded="false" />
+            <element signature="e#8228#8291#0" expanded="false" />
+            <element signature="e#8367#8745#0" expanded="false" />
+            <element signature="e#8789#8860#0" expanded="false" />
+            <element signature="e#9683#9717#0" expanded="false" />
+            <element signature="e#9765#9866#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/programe/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39522058">
+          <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
           <folding />
         </state>
       </provider>
