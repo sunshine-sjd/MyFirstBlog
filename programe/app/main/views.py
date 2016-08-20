@@ -29,9 +29,7 @@ def index():
     pagination = query.order_by(Post.timestamp.desc()).paginate(
                                   page, error_out=False)
     posts = pagination.items
-    now = datetime.now()
-    return render_template('index.html', form=form, posts=posts, pagination=pagination, show_followed=show_followed,
-                           now=now)
+    return render_template('index.html', form=form, posts=posts, pagination=pagination, show_followed=show_followed)
 
 
 @main.route('/user/<username>')
