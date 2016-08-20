@@ -15,7 +15,7 @@
             <a href="{{ url_for('.user', username=post.author.username) }}">
             {{ post.author.username }}
             </a>
-            发表于{{ post.timestamp }}
+            发表于{{ post.timestamp.strftime("%Y-%m-%d %H:%M:%S") }}
         </div>
         <div class="post-body">
 		    {% if post.body_html %}
