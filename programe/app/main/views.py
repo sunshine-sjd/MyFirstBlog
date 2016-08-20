@@ -7,6 +7,7 @@ from .. import db
 from flask_login import login_required
 from ..decorators import admin_required, permission_required
 from ..models import Permission, Post
+from datetime import datetime
 
 
 @main.route('/', methods=['GET', 'POST'])
@@ -28,7 +29,9 @@ def index():
     pagination = query.order_by(Post.timestamp.desc()).paginate(
                                   page, error_out=False)
     posts = pagination.items
-    return render_template('index.html', form=form, posts=posts, pagination=pagination, show_followed=show_followed)
+    now = datetime.now()
+    return render_template('index.html', form=form, posts=posts, pagination=pagination, show_followed=show_followed,
+                           now=now)
 
 
 @main.route('/user/<username>')
