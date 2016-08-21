@@ -7,7 +7,6 @@ from .. import db
 from flask_login import login_required
 from ..decorators import admin_required, permission_required
 from ..models import Permission, Post
-from datetime import datetime
 
 
 @main.route('/', methods=['GET', 'POST'])
