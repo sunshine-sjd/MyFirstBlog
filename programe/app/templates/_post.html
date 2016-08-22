@@ -1,6 +1,6 @@
 <div class="container" style="display: table">
   <div class="row" style="display: table-row">
-    <article class="main-post col-md-8" style="display: table-cell">
+    <article class="main-post col-md-9" style="display: table-cell">
       <ul class="posts list-unstyled">
     {% for post in posts%}
 	<li class="post">
@@ -42,6 +42,7 @@
 	{% endfor %}
   </ul>
     </article>
+    <!--
     <div class="col-md-4 right-slider" style="display: table-cell;margin-top: 19px">
           <h3>What is CondoGrade?</h3>
           <p>CondoGrade provides a rating and detailed financial reports about condo associations.</p>
@@ -63,6 +64,52 @@
               <li>Budgets need to be accurate.</li>
               <li>You could end up paying.</li>
           </ul>
+      </div>
+    -->
+      <div class="col-md-3 right-slider" style="display: table-cell;margin-top: 19px">
+          <ul style="list-style-type: none">
+              <li style="color: #e67e22">
+              <P style="line-height: 1.72222">
+              <a style="color: #e67e22" href="{{ url_for('main.show_category_post', category='Python') }}">
+              <span>>Python </span>
+              </a>
+              <span class="badge text-right" style="float:right">{{ Post.query.filter_by(category='Python').count() }}</span>
+              </p>
+              </li>
+              <li style="color: #e67e22">
+              <P style="line-height: 1.72222">
+              <a style="color: #e67e22" href="{{ url_for('main.show_category_post', category='Flask') }}">
+              <span>>Flask </span>
+              </a>
+              <span class="badge text-right" style="float:right">{{ Post.query.filter_by(category='Flask').count() }}</span>
+              </p>
+              </li>
+              <li style="color: #e67e22">
+              <P style="line-height: 1.72222">
+              <a style="color: #e67e22" href="{{ url_for('main.show_category_post', category='HTML&CSS') }}">
+              <span>>HTML&CSS </span>
+              <span class="badge text-right" style="float:right">{{ Post.query.filter_by(category='HTML&CSS').count() }}</span>
+              </a>
+              </p>
+              </li>
+              <li style="color: #e67e22">
+              <P style="line-height: 1.72222">
+              <a style="color: #e67e22" href="{{ url_for('main.show_category_post', category='算法') }}">
+              <span>>算法 </span>
+              <span class="badge text-right" style="float:right">{{ Post.query.filter_by(category='算法').count() }}</span>
+              </a>
+              </p>
+              </li>
+              <li style="color: #e67e22">
+              <P style="line-height: 1.72222">
+              <a style="color: #e67e22" href="{{ url_for('main.show_category_post', category='数据库') }}">
+              <span>>数据库 </span>
+              <span class="badge text-right" style="float:right">{{ Post.query.filter_by(category='数据库').count() }}</span>
+              </a>
+              </p>
+              </li>
+          </ul>
+
       </div>
   </div>
 </div>

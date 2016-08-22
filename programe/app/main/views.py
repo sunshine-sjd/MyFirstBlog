@@ -31,6 +31,14 @@ def index():
     return render_template('index.html', form=form, posts=posts, pagination=pagination, show_followed=show_followed)
 
 
+@main.route('/post-category/<category>', methods=['GET'])
+def show_category_post(category):
+    page = request.args.get('page', 1, type=int)
+    pagination = Post.query.filter_by(category=category).order_by(Post.timestamp.desc()).paginate(page, error_out=False)
+    posts = pagination.items
+    return render_template('post_category.html', posts=posts, pagination=pagination, category=category)
+
+
 @main.route('/user/<username>')
 def user(username):
     request_user = User.query.filter_by(username=username).first()

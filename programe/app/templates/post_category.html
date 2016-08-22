@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% import 'bootstrap/wtf.html' as wtf %}
+{% import '_macros_for_category.html' as macros %}
+{% block title %}Category-{{ category }}{% endblock title %}
+{% block page_content %}
+<div class="post-tabs">
+    {% include '_post.html' %}
+</div>
+<div class="pagination">
+    {{ macros.pagination_widget(pagination, "main.show_category_post", category)}}
+</div>
+{% endblock page_content %}
+
+{% block scripts %}
+{{super()}}
+{{pagedown.include_pagedown()}}
+<script>
+$(document).ready(function(){
+$(".post-body").each(function()
+{
+ var maxwidth=150;
+ if($(this).text().length>maxwidth){
+ $(this).text($(this).text().substring(0,maxwidth));
+$(this).html($(this).html()+"...");
+}
+});
+ });
+</script>
+{% endblock scripts %}
