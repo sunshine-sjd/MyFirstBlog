@@ -7,6 +7,7 @@ from .. import db
 from flask_login import login_required
 from ..decorators import admin_required, permission_required
 from ..models import Permission, Post
+from datetime import datetime
 
 
 @main.route('/', methods=['GET', 'POST'])
@@ -14,7 +15,7 @@ def index():
     form = PostForm()
     if form.validate_on_submit() and current_user.can(Permission.WRITE_ARTICLES):
         post = Post(body=form.body.data, author=current_user._get_current_object(), title=form.title.data,
-                    category=form.category.data)
+                    category=form.category.data, timestamp=datetime.utcnow())
         db.session.add(post)
         return redirect(url_for('main.index'))
     page = request.args.get('page', 1, type=int)
