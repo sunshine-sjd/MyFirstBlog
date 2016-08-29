@@ -4,3 +4,5 @@ hello.py
 macro_compre.html
 *.pyc
 migrations_back
+migrations
+test.html

@@ -18,11 +18,7 @@
             发表于{{ moment(post.timestamp).format('YYYY年M月D日, hh:mm:ss a') }}
         </div>
         <div class="post-body">
-		    {% if post.body_html %}
-			    {{post.body_html | safe }}
-			{% else %}
-			    {{post.body}}
-			{% endif %}
+            {{post.body | safe }}
 		</div>
 		<div class="post-content">
             <div class="post-footer">

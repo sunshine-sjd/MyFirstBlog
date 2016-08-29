@@ -6,6 +6,8 @@
 <link rel="icon" href="{{ url_for('static', filename = 'favicon.ico') }}" type="image/x-icon">
 <link rel="stylesheet" href="{{ url_for('static', filename='myblog.css') }}">
 <script type="text/javascript" src="http://www.codefans.net/ajaxjs/jquery-1.6.2.min.js"></script>
+<script src="{{ url_for('static', filename = 'ckeditor/ckeditor.js') }}"></script>
+<script src="{{ url_for('static', filename = 'ckeditor/config.js') }}"></script>
 {% endblock head %}
 {% block title %}Flasky{% endblock title %}
 {% block navbar %}

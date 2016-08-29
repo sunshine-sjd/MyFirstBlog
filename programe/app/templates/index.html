@@ -8,9 +8,39 @@
     <h1>欢迎回来 {% if current_user.is_authenticated %}{{current_user.username}} {% else %}{% endif %}</h1>
 </div>
 {% if current_user.can(Permission.WRITE_ARTICLES) %}
+
+<!--
 <div style="margin-top: 25px;margin-left: 25px">
     {{wtf.quick_form(form,method='post')}}
 </div>
+-->
+{% if form.errors %}
+	    <ul class="errors">
+	        {% for field_name, field_errors in form.errors|dictsort if field_errors %}
+	            {% for error in field_errors %}
+	                <li>{{ form[field_name].label }}: {{ error }}</li>
+	            {% endfor %}
+	        {% endfor %}
+	    </ul>
+{% endif %}
+<form  role='form' method="post" action="">
+				{{ form.csrf_token }}
+				<div class="form-group">
+                        {{ form.title.label(class='control-label') }}
+                        {{ form.title(class='form-control')}}
+  				</div>
+  				<div class="form-group">
+                        {{ form.body.label(class='control-label') }}
+      					{{ form.body(class="form-control ckeditor") }}
+  				</div>
+                <div class="form-group">
+                    {{ form.category.label(class='control-label') }}
+                    {{ form.category(class='form-control') }}
+  				</div>
+  				{{ form.submit(class='btn-default btn') }}
+</form>
+
+
 {% endif %}
 <div class="post-tabs">
     <ul class="nav nav-tabs">
@@ -30,6 +60,7 @@
 {% block scripts %}
 {{super()}}
 {{pagedown.include_pagedown()}}
+<!--
 <script>
 $(document).ready(function(){
 $(".post-body").each(function()
@@ -42,4 +73,5 @@ $(this).html($(this).html()+"...");
 });
  });
 </script>
+-->
 {% endblock scripts %}
