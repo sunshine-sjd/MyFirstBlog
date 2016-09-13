@@ -1,111 +1,73 @@
-<div class="container" style="display: table">
-  <div class="row" style="display: table-row">
-    <article class="main-post col-md-9" style="display: table-cell">
-      <ul class="posts list-unstyled">
-    {% for post in posts%}
-	<li class="post">
-	    <!--div class="profile-thumbnail">
-		    <a href="{{url_for('main.user', username=post.author.username)}}">
-			    <img class="img-rounded profile-thumbnail" src="{{post.author.gravatar(size=40)}}"/>
-			</a>
-		</div-->
-        <div class="title"><h2>{{ post.title }}</h2></div>
-		<div class="post-date">{{moment(post.timestamp).fromNow()}}</div>
-		<div class="post-author">
-            <a href="{{ url_for('.user', username=post.author.username) }}">
-            {{ post.author.username }}
-            </a>
-            发表于{{ moment(post.timestamp).format('YYYY年M月D日, hh:mm:ss a') }}
+<div class="container" style="margin-top: 30px" xmlns="http://www.w3.org/1999/html">
+    <div class="row">
+        <div class="col-md-9" style="padding-left: 0;border-right: 1px solid #dad4d4">
+            {% for post in posts %}
+            <article class="article-card" style="padding-top: 20px;padding-left: 30px">
+                <h4>{{ post.title }}</h4>
+                <P>
+                    <small>
+                        <span class="glyphicon glyphicon-calendar"></span>
+                        <span style="color:#8C8C8C;">发表于{{ moment(post.timestamp).format('YYYY年M月D日, hh:mm:ss a') }}</span>
+                    </small>
+                    <small>
+                        <span class="pull-right">{{ moment(post.timestamp).fromNow() }}</span>
+                    </small>
+                </P>
+                <div class="post-body">
+                    {{ post.body | safe }}
+                </div>
+                <footer style="background-color: white;margin-top: 5px;font-size: 14px">
+                    <a href="{{ url_for('main.show_category_post', category=post.category) }}">
+                        <span><small>{{ post.category }}</small></span>
+                    </a>
+                    <a href="{{ url_for('main.post', id=post.id) }}#comments">
+                        <span><small>评论 {{ post.comments.count() }}</small></span>
+                    </a>
+                    <a href="{{ url_for('main.post', id=post.id) }}" style="float: right;color: #1abc9c">
+                        <img src="../static/readmore.png"> <small>阅读全文>></small>
+                    </a>
+                </footer>
+            </article>
+            {% endfor %}
         </div>
-        <div class="post-body">
-            {{post.body | safe }}
-		</div>
-		<div class="post-content">
-            <div class="post-footer">
-                <a href="/"><span class="label label-default">{{ post.category }}</span></a>
-                <a href="{{ url_for('.post', id=post.id) }}"><span class="label label-info">阅读全文</span></a>
-				{% if current_user == post.author %}
-				    <a href="{{ url_for('.edit_post', id=post.id) }}"><span class="label label-primary">修改</span></a>
-				{% elif current_user.is_administrator()%}
-				    <a href="{{ url_for('.edit_post', id=post.id) }}"><span class="label label-danger">修改[管理员]</span></a>
-				{% endif %}
-				<a href="{{ url_for('.post', id=post.id) }}#comments">
-                    <span class="label label-primary">{{ post.comments.count() }} 评论</span>
-                </a>
+        <div class="col-md-3 pull-right">
+            <div class="article-card">
+                <div style="font-size: 16px;border-bottom: 1px solid #dad4d4;padding: 0 0 10px 0">
+                <strong><span><img src="../static/category.png"></span> 文章分类</strong>
+                </div>
+                <ul style="list-style-type: none;padding-left: 0;line-height: 2.5em;margin-top: 10px;">
+                    <li>
+                        <a href="{{ url_for('main.show_category_post', category='Python') }}" style="">
+                            Python
+                        <span class="badge text-right" style="float:right">
+                        {{ Post.query.filter_by(category='Python').count() }}</span></a>
+                    </li>
+                    <li>
+                        <a href="{{ url_for('main.show_category_post', category='Flask') }}">
+                            Flask</a>
+                        <span class="badge text-right" style="float:right">
+                        {{ Post.query.filter_by(category='Flask').count() }}</span>
+                    </li>
+                    <li>
+                        <a href="{{ url_for('main.show_category_post', category='HTML&CSS') }}">
+                            HTML&CSS</a>
+                        <span class="badge text-right" style="float:right">
+                        {{ Post.query.filter_by(category='HTML&CSS').count() }}</span>
+                    </li>
+                    <li>
+                        <a href="{{ url_for('main.show_category_post', category='算法') }}">
+                            算法</a>
+                        <span class="badge text-right" style="float:right">
+                        {{ Post.query.filter_by(category='算法').count() }}</span>
+                    </li>
+                    <li>
+                        <a href="{{ url_for('main.show_category_post', category='数据库') }}">
+                            数据库</a>
+                        <span class="badge text-right" style="float:right">
+                        {{ Post.query.filter_by(category='数据库').count() }}</span>
+                    </li>
+                </ul>
             </div>
         </div>
-	</li>
-	{% endfor %}
-  </ul>
-    </article>
-    <!--
-    <div class="col-md-4 right-slider" style="display: table-cell;margin-top: 19px">
-          <h3>What is CondoGrade?</h3>
-          <p>CondoGrade provides a rating and detailed financial reports about condo associations.</p>
-          <p>Buyers use our tools to make smarter decisions about their next condo purchase.</p>
-          <p>Remember:</p>
-          <ul>
-              <li>Buildings need maintenence.</li>
-              <li>Budgets need to be accurate.</li>
-              <li>You could end up paying.</li>
-          </ul>
-      </div>
-    <div class="col-md-4 right-slider" style="display: table-cell;margin-top: 19px">
-          <h3>What is CondoGrade?</h3>
-          <p>CondoGrade provides a rating and detailed financial reports about condo associations.</p>
-          <p>Buyers use our tools to make smarter decisions about their next condo purchase.</p>
-          <p>Remember:</p>
-          <ul>
-              <li>Buildings need maintenence.</li>
-              <li>Budgets need to be accurate.</li>
-              <li>You could end up paying.</li>
-          </ul>
-      </div>
-    -->
-      <div class="col-md-3 right-slider" style="display: table-cell;margin-top: 19px">
-          <ul style="list-style-type: none">
-              <li style="color: #e67e22">
-              <P style="line-height: 1.72222">
-              <a style="color: #e67e22" href="{{ url_for('main.show_category_post', category='Python') }}">
-              <span>>Python </span>
-              </a>
-              <span class="badge text-right" style="float:right">{{ Post.query.filter_by(category='Python').count() }}</span>
-              </p>
-              </li>
-              <li style="color: #e67e22">
-              <P style="line-height: 1.72222">
-              <a style="color: #e67e22" href="{{ url_for('main.show_category_post', category='Flask') }}">
-              <span>>Flask </span>
-              </a>
-              <span class="badge text-right" style="float:right">{{ Post.query.filter_by(category='Flask').count() }}</span>
-              </p>
-              </li>
-              <li style="color: #e67e22">
-              <P style="line-height: 1.72222">
-              <a style="color: #e67e22" href="{{ url_for('main.show_category_post', category='HTML&CSS') }}">
-              <span>>HTML&CSS </span>
-              <span class="badge text-right" style="float:right">{{ Post.query.filter_by(category='HTML&CSS').count() }}</span>
-              </a>
-              </p>
-              </li>
-              <li style="color: #e67e22">
-              <P style="line-height: 1.72222">
-              <a style="color: #e67e22" href="{{ url_for('main.show_category_post', category='算法') }}">
-              <span>>算法 </span>
-              <span class="badge text-right" style="float:right">{{ Post.query.filter_by(category='算法').count() }}</span>
-              </a>
-              </p>
-              </li>
-              <li style="color: #e67e22">
-              <P style="line-height: 1.72222">
-              <a style="color: #e67e22" href="{{ url_for('main.show_category_post', category='数据库') }}">
-              <span>>数据库 </span>
-              <span class="badge text-right" style="float:right">{{ Post.query.filter_by(category='数据库').count() }}</span>
-              </a>
-              </p>
-              </li>
-          </ul>
-
-      </div>
-  </div>
+    </div>
 </div>

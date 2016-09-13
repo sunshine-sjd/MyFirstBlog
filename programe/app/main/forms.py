@@ -46,8 +46,9 @@ class EditProfileAdminForm(Form):
 
 
 class PostForm(Form):
-    title = StringField('文章标题：', validators=[DataRequired()])
-    body = PageDownField("记录你的点滴...", validators=[DataRequired()])
+    title = StringField('文章标题：', validators=[DataRequired(message='请输入文字...'),
+                                             Length(0, 10, message='文章字数请限制10字以内')])
+    body = PageDownField("记录你的点滴...", validators=[DataRequired(message='请输入文字...')])
     category = SelectField('文章分类：', choices=[('Python', 'Python'), ('Flask', 'Flask'), ('HTML&CSS', 'HTML&CSS'),
                                              ('算法', '算法'), ('数据库', '数据库')], coerce=str)
     submit = SubmitField('submit')

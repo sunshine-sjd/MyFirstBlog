@@ -27,7 +27,7 @@ def index():
     else:
         query = Post.query
     pagination = query.order_by(Post.timestamp.desc()).paginate(
-                                  page, error_out=False)
+                                  page, per_page=8, error_out=False)
     posts = pagination.items
     return render_template('index.html', form=form, posts=posts, pagination=pagination, show_followed=show_followed)
 
@@ -35,7 +35,8 @@ def index():
 @main.route('/post-category/<category>', methods=['GET'])
 def show_category_post(category):
     page = request.args.get('page', 1, type=int)
-    pagination = Post.query.filter_by(category=category).order_by(Post.timestamp.desc()).paginate(page, error_out=False)
+    pagination = Post.query.filter_by(category=category).order_by(Post.timestamp.desc()).paginate(page, per_page=8,
+                                                                                                  error_out=False)
     posts = pagination.items
     return render_template('post_category.html', posts=posts, pagination=pagination, category=category)
 
