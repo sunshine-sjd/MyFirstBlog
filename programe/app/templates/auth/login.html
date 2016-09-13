@@ -29,7 +29,7 @@
          {{ form.submit(class='btn btn-primary')}}
          <span style="margin-left:248px"><a href="{{url_for('auth.reset_password_request')}}">忘记密码?</a></span>
      </form>
-     <button class="btn btn-default" style="margin-top: 5px;"><a href="{{url_for('auth.register')}}">注册新用户</a></button>
+     <span style="margin-top: 5px;"><a href="{{url_for('auth.register')}}">注册新用户</a></span>
   </div>
 
 {% endblock page_content %}

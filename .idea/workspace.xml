@@ -2,184 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="27088320-f075-4095-856a-92fbc82942c6" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/bootstrap/css/bootstrap-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/bootstrap/css/bootstrap-theme.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/bootstrap/css/bootstrap-theme.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/bootstrap/css/bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/bootstrap/css/bootstrap.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/bootstrap/css/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/bootstrap/fonts/glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/bootstrap/fonts/glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/bootstrap/fonts/glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/bootstrap/js/bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/bootstrap/js/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/ckeditor/CHANGES.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/ckeditor/LICENSE.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/ckeditor/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/ckeditor/samples/css/samples.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/ckeditor/samples/img/github-top.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/ckeditor/samples/img/header-bg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/ckeditor/samples/img/header-separator.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/ckeditor/samples/img/logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/ckeditor/samples/img/navigation-tip.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/ckeditor/samples/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/ckeditor/samples/js/sample.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/ckeditor/samples/js/sf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/ckeditor/samples/old/ajax.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/ckeditor/samples/old/api.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/ckeditor/samples/old/appendto.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/ckeditor/samples/old/assets/inlineall/logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/ckeditor/samples/old/assets/outputxhtml/outputxhtml.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/ckeditor/samples/old/assets/posteddata.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/ckeditor/samples/old/assets/sample.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/ckeditor/samples/old/assets/uilanguages/languages.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/ckeditor/samples/old/datafiltering.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/ckeditor/samples/old/dialog/assets/my_dialog.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/ckeditor/samples/old/dialog/dialog.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/ckeditor/samples/old/divreplace.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/ckeditor/samples/old/enterkey/enterkey.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/ckeditor/samples/old/htmlwriter/assets/outputforflash/outputforflash.fla" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/ckeditor/samples/old/htmlwriter/assets/outputforflash/outputforflash.swf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/ckeditor/samples/old/htmlwriter/assets/outputforflash/swfobject.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/ckeditor/samples/old/htmlwriter/outputforflash.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/ckeditor/samples/old/htmlwriter/outputhtml.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/ckeditor/samples/old/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/ckeditor/samples/old/inlineall.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/ckeditor/samples/old/inlinebycode.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/ckeditor/samples/old/inlinetextarea.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/ckeditor/samples/old/jquery.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/ckeditor/samples/old/magicline/magicline.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/ckeditor/samples/old/readonly.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/ckeditor/samples/old/replacebyclass.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/ckeditor/samples/old/replacebycode.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/ckeditor/samples/old/sample.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/ckeditor/samples/old/sample.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/ckeditor/samples/old/sample_posteddata.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/ckeditor/samples/old/tabindex.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/ckeditor/samples/old/toolbar/toolbar.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/ckeditor/samples/old/uicolor.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/ckeditor/samples/old/uilanguages.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/ckeditor/samples/old/wysiwygarea/fullpage.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/ckeditor/samples/old/xhtmlstyle.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/ckeditor/samples/toolbarconfigurator/css/fontello.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/ckeditor/samples/toolbarconfigurator/font/LICENSE.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/ckeditor/samples/toolbarconfigurator/font/config.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/ckeditor/samples/toolbarconfigurator/font/fontello.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/ckeditor/samples/toolbarconfigurator/font/fontello.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/ckeditor/samples/toolbarconfigurator/font/fontello.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/ckeditor/samples/toolbarconfigurator/font/fontello.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/ckeditor/samples/toolbarconfigurator/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/ckeditor/samples/toolbarconfigurator/js/abstracttoolbarmodifier.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/ckeditor/samples/toolbarconfigurator/js/fulltoolbareditor.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/ckeditor/samples/toolbarconfigurator/js/toolbarmodifier.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/ckeditor/samples/toolbarconfigurator/js/toolbartextmodifier.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/ckeditor/samples/toolbarconfigurator/lib/codemirror/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/ckeditor/samples/toolbarconfigurator/lib/codemirror/codemirror.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/ckeditor/samples/toolbarconfigurator/lib/codemirror/codemirror.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/ckeditor/samples/toolbarconfigurator/lib/codemirror/javascript.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/ckeditor/samples/toolbarconfigurator/lib/codemirror/neo.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/ckeditor/samples/toolbarconfigurator/lib/codemirror/show-hint.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/ckeditor/samples/toolbarconfigurator/lib/codemirror/show-hint.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/dist/css/flat-ui.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/dist/css/flat-ui.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/dist/css/flat-ui.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/dist/css/vendor/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/dist/fonts/glyphicons/flat-ui-icons-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/dist/fonts/glyphicons/flat-ui-icons-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/dist/fonts/glyphicons/flat-ui-icons-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/dist/fonts/glyphicons/flat-ui-icons-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/dist/fonts/glyphicons/selection.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/dist/fonts/lato/lato-black.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/dist/fonts/lato/lato-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/dist/fonts/lato/lato-black.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/dist/fonts/lato/lato-black.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/dist/fonts/lato/lato-bold.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/dist/fonts/lato/lato-bold.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/dist/fonts/lato/lato-bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/dist/fonts/lato/lato-bold.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/dist/fonts/lato/lato-bolditalic.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/dist/fonts/lato/lato-bolditalic.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/dist/fonts/lato/lato-bolditalic.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/dist/fonts/lato/lato-bolditalic.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/dist/fonts/lato/lato-italic.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/dist/fonts/lato/lato-italic.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/dist/fonts/lato/lato-italic.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/dist/fonts/lato/lato-italic.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/dist/fonts/lato/lato-light.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/dist/fonts/lato/lato-light.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/dist/fonts/lato/lato-light.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/dist/fonts/lato/lato-light.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/dist/fonts/lato/lato-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/dist/fonts/lato/lato-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/dist/fonts/lato/lato-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/dist/fonts/lato/lato-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/dist/img/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/dist/img/icons/png/Book.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/dist/img/icons/png/Calendar.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/dist/img/icons/png/Chat.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/dist/img/icons/png/Clipboard.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/dist/img/icons/png/Compas.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/dist/img/icons/png/Gift-Box.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/dist/img/icons/png/Infinity-Loop.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/dist/img/icons/png/Mail.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/dist/img/icons/png/Map.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/dist/img/icons/png/Pensils.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/dist/img/icons/png/Pocket.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/dist/img/icons/png/Retina-Ready.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/dist/img/icons/png/Toilet-Paper.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/dist/img/icons/png/Watches.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/dist/img/icons/svg/book.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/dist/img/icons/svg/calendar.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/dist/img/icons/svg/chat.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/dist/img/icons/svg/clipboard.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/dist/img/icons/svg/clocks.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/dist/img/icons/svg/compas.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/dist/img/icons/svg/gift-box.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/dist/img/icons/svg/loop.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/dist/img/icons/svg/mail.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/dist/img/icons/svg/map.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/dist/img/icons/svg/paper-bag.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/dist/img/icons/svg/pencils.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/dist/img/icons/svg/retina.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/dist/img/icons/svg/ribbon.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/dist/img/icons/svg/toilet-paper.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/dist/img/login/icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/dist/img/login/imac-2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/dist/img/login/imac.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/dist/img/tile/ribbon-2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/dist/img/tile/ribbon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/dist/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/dist/js/flat-ui.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/dist/js/flat-ui.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/dist/js/vendor/html5shiv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/dist/js/vendor/jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/dist/js/vendor/jquery.min.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/dist/js/vendor/respond.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/dist/js/vendor/video-js.swf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/dist/js/vendor/video.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/flat-ui.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/font-awesome.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/gagasalamer.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/myblog.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/mystyle.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/mystyle.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/pic/123.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/pic/login_background.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/programe/app/static/styles.css" afterPath="" />
       <change type="MODIFICATION" beforePath="D:/python/flask/flask_web/flask_mod/data-dev.sqlite" afterPath="D:/python/flask/flask_web/flask_mod/data-dev.sqlite" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/programe/app/auth/forms.py" afterPath="$PROJECT_DIR$/programe/app/auth/forms.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/programe/app/main/forms.py" afterPath="$PROJECT_DIR$/programe/app/main/forms.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/programe/app/main/views.py" afterPath="$PROJECT_DIR$/programe/app/main/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/programe/app/models.py" afterPath="$PROJECT_DIR$/programe/app/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/programe/app/templates/_post.html" afterPath="$PROJECT_DIR$/programe/app/templates/_post.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/programe/app/templates/auth/login.html" afterPath="$PROJECT_DIR$/programe/app/templates/auth/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/programe/app/templates/base.html" afterPath="$PROJECT_DIR$/programe/app/templates/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/programe/app/templates/index.html" afterPath="$PROJECT_DIR$/programe/app/templates/index.html" />
       <change type="MODIFICATION" beforePath="D:/python/flask/flask_web/.idea/workspace.xml" afterPath="D:/python/flask/flask_web/.idea/workspace.xml" />
     </list>
     <ignored path="MyFirstBlog.iws" />
@@ -240,10 +64,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/programe/app/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6368159">
+            <state vertical-scroll-proportion="-11.636364">
               <caret line="84" column="27" selection-start-line="84" selection-start-column="27" selection-end-line="84" selection-end-column="27" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -273,15 +97,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/programe/app/templates/auth/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.909091">
-              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.60199004">
+              <caret line="31" column="11" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#form#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -366,8 +190,8 @@
         <option value="$PROJECT_DIR$/programe/app/static/xilou.css" />
         <option value="$PROJECT_DIR$/programe/app/models.py" />
         <option value="$PROJECT_DIR$/programe/app/auth/forms.py" />
-        <option value="$PROJECT_DIR$/programe/app/templates/auth/login.html" />
         <option value="$PROJECT_DIR$/programe/app/templates/base.html" />
+        <option value="$PROJECT_DIR$/programe/app/templates/auth/login.html" />
       </list>
     </option>
   </component>
@@ -1538,25 +1362,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/programe/app/templates/auth/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.909091">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#form#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/programe/app/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6368159">
+        <state vertical-scroll-proportion="-11.636364">
           <caret line="84" column="27" selection-start-line="84" selection-start-column="27" selection-end-line="84" selection-end-column="27" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/programe/app/templates/auth/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.60199004">
+          <caret line="31" column="11" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#form#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
