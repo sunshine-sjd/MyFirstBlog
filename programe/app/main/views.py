@@ -46,8 +46,12 @@ def user(username):
     request_user = User.query.filter_by(username=username).first()
     if request_user is None:
         abort(404)
-    posts = request_user.posts.order_by(Post.timestamp.desc()).all()
-    return render_template('user.html', user=request_user, posts=posts)
+    page = request.args.get('page', 1, type=int)
+    query = request_user.posts
+    pagination = query.order_by(Post.timestamp.desc()).paginate(
+                                  page, per_page=8, error_out=False)
+    posts = pagination.items
+    return render_template('user.html', user=request_user, posts=posts, pagination=pagination, username=username)
 
 
 @main.route('/user/edit-profile', methods=['GET', 'POST'])

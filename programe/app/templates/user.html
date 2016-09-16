@@ -1,13 +1,38 @@
 {% extends "base.html" %}
+{% import '_macros_for_username.html' as macros %}
 
 {% block page_content %}
-<h1>{{user.username}}!</h1>
+<h4 style="margin-left: 30px">个人资料：{{user.username}}!</h4>
+
+<table class="table table-bordered table-striped" style="width:50%;margin-left: 30px">
+  <tbody>
+      <tr>
+          <td>用户名</td>
+          <td>{{ user.username }}</td>
+      </tr>
+      <tr>
+          <td>邮箱</td>
+          <td>{{ user.email }}</td>
+      </tr>
+      <tr>
+          <td>地址</td>
+          <td>{{ user.location }}</td>
+      </tr>
+      <tr>
+          <td>注册时间</td>
+          <td>{{ moment(user.member_since).format('LLL') }}</td>
+      </tr>
+  </tbody>
+</table>
+
+<!--
 {% if current_user.is_administrator() %}
 <p><a class="btn btn-default" style="color: red" href="{{url_for('main.edit_profile_admin', id=user.id)}}">Edit profile(Admin)</a></p>
 {% endif %}    
 {% if user == current_user and not current_user.is_administrator() %}
 <p><a class="btn btn-default" style="color: green" href="{{url_for('main.edit_profile')}}">Edit profile</a></p>
 {% endif %}
+
 <p>
 {% if user.name %} {{user.name}} {% endif %}
 {% if user.location %} From {{user.location}} {% endif %}
@@ -34,7 +59,12 @@ Last seen {{moment(user.last_seen).fromNow()}}.
 {% if current_user.is_authenticated and user != current_user and user.is_following(current_user) %}
 <span class="label label-default">Follows you</span>
 {% endif %}
+-->
 
-<h3>Posts by {{user.username}}</h3>
+
+<h4 style="margin-top: 40px;margin-left: 30px">{{user.username}}的文章：</h4>
 {% include '_post.html'%}
+<div style="margin-left: 200px ">
+    {{ macros.pagination_widget(pagination, "main.user", username)}}
+</div>
 {% endblock page_content %}
